@@ -1,4 +1,4 @@
-DML e DQL
+DML
 
 <!DOCTYPE html>
 <html>
