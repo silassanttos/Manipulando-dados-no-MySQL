@@ -23,11 +23,11 @@ primary key(id_venda, produto, dt_venda)
 foreign key (produto) references produto (codigo))
 
 /*Problema:
-Criar uma estrutura de programaÁ„o SQL que 
-ao se inserir uma venda, verifique se È parte da 
-compra anterior ou nova compra (dÍ algum erro 
-caso n„o se enquadre), e calcule o valor_total
-antes da inserÁ„o
+Criar uma estrutura de programa√ß√£o SQL que 
+ao se inserir uma venda, verifique se √© parte da 
+compra anterior ou nova compra (d√™ algum erro 
+caso n√£o se enquadre), e calcule o valor_total
+antes da inser√ß√£o
 */
 /*Procedimentos Armazenados (Stored Procedures)
 CREATE PROCEDURE sp_nome (variaveis entrada e saida)
@@ -79,7 +79,7 @@ AS
 		END
 		IF (UPPER(@tipo) != 'C' AND UPPER(@tipo) != 'N')
 		BEGIN
-			RAISERROR ('OperaÁ„o inv·lida !', 16, 1)
+			RAISERROR ('Opera√ß√£o inv√°lida !', 16, 1)
 		END
 		ELSE 
 		BEGIN
@@ -95,7 +95,7 @@ AS
 	END
 	ELSE
 	BEGIN
-		RAISERROR ('Produto n„o cadastrado', 16, 1)
+		RAISERROR ('Produto n√£o cadastrado', 16, 1)
 	END
 
 -----------------------------
