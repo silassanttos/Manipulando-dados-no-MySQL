@@ -10,7 +10,7 @@ BACKUP DATABASE procedimento
 TO DISK = 'C:\Users\PC\Desktop\VM\procedimento.bak'
 
 
---RESTORE Completo da Base de Dados -- 1º Caso (Direto)
+--RESTORE Completo da Base de Dados -- 1Âº Caso (Direto)
 /*
 RESTORE DATABASE nome_da_database
 FROM DISK = 'caminho_do_arquivo_de_backup'
@@ -22,9 +22,9 @@ RESTORE DATABASE procedimento
 FROM DISK = 'C:\Users\PC\Desktop\VM\procedimento.bak'
 WITH RECOVERY
 
---RESTORE Completo da Base de Dados -- 2º Caso (Restrições de SO)
---RESTORE WITH REPLACE só deve ser utilizado quando se tem certeza da database que será substituída
---	Operação não permite BEGIN TRANSACTION
+--RESTORE Completo da Base de Dados -- 2Âº Caso (RestriÃ§Ãµes de SO)
+--RESTORE WITH REPLACE sÃ³ deve ser utilizado quando se tem certeza da database que serÃ¡ substituÃ­da
+--	OperaÃ§Ã£o nÃ£o permite BEGIN TRANSACTION
 /*
 CREATE DATABASE nome_database
 
